@@ -1,36 +1,36 @@
 //! #include <ASE> // Improvment This is <ASE> Code :D
-#include <iostream> // Input and Output Library In C++.
+#include <iostream>  // Input and Output Library In C++.
 using namespace std; // To Use (cin) , (cout) , (endl) Without Typing std::...
 
 //! Class Person: (cls) To Show This Is A Class Not A Data Type Or Function
 class clsPerson
 {
   // Private Attributes
-  private:
-    int _ID;                // To Store The Person's ID
-    string _FirstName;      // To Store The Perosn's FirstName
-    string _LastName;       // To Store The Person's LastName
-    string _Email;          // To Store The Person's Email
-    int _Phone;             // To Store The Person's Phone
+private:
+  int _ID;           // To Store The Person's ID
+  string _FirstName; // To Store The Perosn's FirstName
+  string _LastName;  // To Store The Person's LastName
+  string _Email;     // To Store The Person's Email
+  int _Phone;        // To Store The Person's Phone
 
   // Public Methods
   // Any Const Methods That's Mean I Don't Want To Modify The Data. Just Breaing It.
-  public:
-    clsPerson(int, string, string, string, int);     // A Constructor To Init The Values For Any Object (ID,FirstName,LastName,Email,Phone)
-    void setFirstName(string);                       // Setter Method To Set The FirstName For The Person
-    void setLastName(string);                        // Setter Method To Set The LastName For The Person
-    void setEmail(string);                           // Setter Method To Set The Email For The Person
-    void setPhone(int);                              // Setter Method To Set The Phone For The Person
-//  void setID();                                    // There Isn't Any Setter Method For The Person ID ( Due To I Don't Wan't To Applay The User Edit The ID)
-    int getID() const;                               // Const Getter Method To Get The ID For The Person  
-    string getFirstName() const;                     // Const Getter Method To Get The FirstName For The Person
-    string getLastName() const;                      // Const Getter Method To Get The LastName For The Person
-    string getFullName() const;                      // Const Getter Method To Get The FullName For The Person
-    string getEmail() const;                         // Const Getter Method To Get The Email For The Person
-    int getPhone() const;                            // Const Getter Method To Get The Phone For The Person
-    void printInfo() const;                          // Const Method To Print The Information For The Person Like: (ID,FirstName,LastName,FullName,Email,Phone)
-    void sendEmail(string, string);                  // Method To Send Email For The Person With (Subject,Body)
-    void sendSMS(string);                            // Method To Send SMS For The Person With (SMS)
+public:
+  clsPerson(int, string, string, string, int); // A Constructor To Init The Values For Any Object (ID,FirstName,LastName,Email,Phone)
+  void setFirstName(string);                   // Setter Method To Set The FirstName For The Person
+  void setLastName(string);                    // Setter Method To Set The LastName For The Person
+  void setEmail(string);                       // Setter Method To Set The Email For The Person
+  void setPhone(int);                          // Setter Method To Set The Phone For The Person
+                                               //  void setID();                                    // There Isn't Any Setter Method For The Person ID ( Due To I Don't Wan't To Applay The User Edit The ID)
+  int getID() const;                           // Const Getter Method To Get The ID For The Person
+  string getFirstName() const;                 // Const Getter Method To Get The FirstName For The Person
+  string getLastName() const;                  // Const Getter Method To Get The LastName For The Person
+  string getFullName() const;                  // Const Getter Method To Get The FullName For The Person
+  string getEmail() const;                     // Const Getter Method To Get The Email For The Person
+  int getPhone() const;                        // Const Getter Method To Get The Phone For The Person
+  void printInfo() const;                      // Const Method To Print The Information For The Person Like: (ID,FirstName,LastName,FullName,Email,Phone)
+  void sendEmail(string, string);              // Method To Send Email For The Person With (Subject,Body)
+  void sendSMS(string);                        // Method To Send SMS For The Person With (SMS)
 };
 
 // Implemantion For The Methods
