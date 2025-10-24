@@ -1,0 +1,16 @@
+._1 {
+  width: 300px;
+}
+.search-box {
+  margin-left: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border-color: blue;
+  border-width: 1px;
+}
+.search-box:active {
+  border-color: blue;
+}
